@@ -1,0 +1,123 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Harry</title>
+</head>
+<body>
+	<header>
+		<div align="center">
+		<h1><strong> ~ Programación M4S2 ~
+			<p>   </p>
+~MANUAL TRABAJO FINAL AGOSTO 2018 - ENERO 2019. ~ </strong></h1>
+		<img src="C:\Users\pemay\Documents\Pagina Harry Styles\Imágenes Harry\green.png">
+	</div>
+		
+		<nav>
+			<img src="C:\Users\pemay\Documents\Pagina Harry Styles\Imágenes Harry\green2.png">
+			<ul>
+		    <div>
+				<h3><strong> Ubuntu.</strong></h3>
+				<li><a> Demos tener instalada previamente la máquina virtual en mi caso (Virtual Box) con su respectiva imagen . ISO Ubuntu-Server; despues de la configuración es necesario tener conexión a internet.</a></li>
+            </div>
+            <p>     </p>
+            <div>
+				<p>
+<li> Para descargar php, mysql-server, apache2 y php-mysql.
+	<p>     </p>
+    $ get install php php-mysql apache2 mysql-server</li>
+     <p>     </p>
+<li> Para poder comprobar la instalación fue correctamente instalada, apache2.
+	<p>     </p>
+    $ ifconfig
+    <p>     </p>
+    ip 192. 168. 56.101 (ésta IP copiarla y ponerla en el navegador para así salga la página oficial de apache, y si si carga es porque realemente  sí está correctamente instalado).</li>
+     <p>     </p>
+<li> Crearemos un nuevo directorio.
+	<p>     </p>
+    $ mkdir mipagina</li>
+     <p>     </p>
+<li> Ir hacía el directorio creado.
+	<p>     </p>
+    $ cd mipagina</li>
+     <p>     </p>
+<li> Crearemos otro directorio y para ir hacia el.
+	<p>     </p>
+    $ mkadir html
+    <p>     </p>
+    $ cd html</li>
+     <p>     </p>
+<li> Clonaremos el archivo de GitHub en el directorio HTML,  y cambiaremos el nombre que tiene, a “Programacion”.
+	<p>     </p>
+    $ git clone https://github.com/dgeti-cetis108/Programacion-M4S2-2018.git
+    <p>     </p>
+    $ mv /Programacion-M4S2-2018.git
+    <p>     </p>
+    $ /mipagina/html/programacion</li>
+     <p>     </p>
+<li> Crearemos  “Library.com” y moveremos las carpetas con los comandos siguientes:
+    $ mkdir library.com
+    <p>     </p>
+    $ mv library.com/ var/ www/ html</li>
+     <p>     </p>
+<li> Todos los archivos de “Programacion” los moveremos a “library.com”.
+	<p>     </p>
+    $ mv imagenes/ var/ www/ html / library.com
+    <p>     </p>
+    $ mv index.php/ var/ www/ html / library.com
+    <p>     </p>
+    $ mv js/ var/ www/ html / library.com 
+    <p>     </p>
+    $ mv bd/ var/ www/ html / library.com </li>
+     <p>     </p>
+<li> Vamos a iniciar lo que ya se intaló.
+	<p>     </p>
+     $ sudo service apache2
+     <p>     </p>
+     $ sudo service mysql</li>
+     <p>     </p>
+
+<li>  Ahora vamos a comprobar que realemente Msql está corriendo y lo modificaremos en modo super usuario.
+	<p>     </p>
+     $ sudo -i
+     <p>     </p>
+     $ mysql</li>
+     <p>     </p>
+
+<li> Vamos a abrir el Bloc de notas en modo Administrador 
+	<p>     </p>
+     Abrir bloc de notas modo administrador e ir a la siguiente dirección: “C:\Windows\System32\drivers\etc\hosts” por consiguiente poner lo siquiente:
+     <p>     </p>
+     192. 168. 56.101 library.com</li>
+     <p>     </p>
+
+<li>  De la misma manera que Ubuntu:
+	<p>     </p>
+     $ sudo nano /etc/apache2/sites-available/example.com.conf
+     <p>     </p>
+     192. 168. 56.101 library.com.conf</li>
+     <p>     </p>
+
+<li> Esto que acabamos de hacerlo habilitaremos.
+	<p>     </p>
+     $ sudo a2ensite library.com.conf
+     <p>     </p>
+<li> Para que funcione de la manera más correcta reiniciaremos Apache.
+	<p>     </p>
+     $ sudo service apache2 restar</li>
+     <p>     </p>
+Y por ultimo guardamos el estado de la máquina virtual y si en el buscador ponemos “libary.com” deberá aparecer la página. 
+</p>
+            </div>
+			</ul>
+		</nav>
+	</header>
+	<footer>
+		<img src="C:\Users\pemay\Documents\Pagina Harry Styles\Imágenes Harry\green.png">
+		<div align="center">
+		<p><strong>GRACIAS POR VISITARNOS</strong></p>
+		<p> - M A R I A N N E  -  </p>
+	</div>
+	</footer>
+</body>
+</html>
